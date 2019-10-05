@@ -1,10 +1,10 @@
-package main
+package solution
 
 import (
 	"fmt"
 )
 
-func main() {
+func Run0007() {
 	fmt.Println(reverse(123))
 	fmt.Println(reverse(-123))
 	fmt.Println(reverse(120))

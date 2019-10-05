@@ -1,8 +1,8 @@
-package main
+package solution
 
 import "fmt"
 
-func main() {
+func Run0001() {
 	fmt.Println(twoSum([]int{2, 7, 11, 15}, 9))
 	fmt.Println(twoSum([]int{2, 1}, 4))
 }

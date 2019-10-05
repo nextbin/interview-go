@@ -1,8 +1,8 @@
-package main
+package solution
 
 import "fmt"
 
-func main() {
+func Run0204() {
 	fmt.Println(countPrimes(10))
 	fmt.Println(countPrimes(2))
 	fmt.Println(countPrimes(3))

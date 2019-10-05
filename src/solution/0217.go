@@ -1,8 +1,8 @@
-package main
+package solution
 
 import "fmt"
 
-func main() {
+func Run0217() {
 	fmt.Println(containsDuplicate([]int{1, 2, 3, 1}))
 	fmt.Println(containsDuplicate([]int{1, 2, 3, 4}))
 	fmt.Println(containsDuplicate([]int{1, 1, 1, 3, 3, 4, 3, 2, 4, 2}))

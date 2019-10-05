@@ -1,8 +1,8 @@
-package main
+package solution
 
 import "fmt"
 
-func main() {
+func Run0009() {
 	fmt.Println(isPalindrome(121))
 	fmt.Println(isPalindrome(-121))
 	fmt.Println(isPalindrome(10))
@@ -11,9 +11,9 @@ func main() {
 
 func isPalindrome(x int) bool {
 	var str = fmt.Sprintf("%d", x)
-	var len = len(str)
-	for idx, _ := range str {
-		if str[idx] != str[len-1-idx] {
+	var size = len(str)
+	for idx := range str {
+		if str[idx] != str[size-1-idx] {
 			return false
 		}
 	}

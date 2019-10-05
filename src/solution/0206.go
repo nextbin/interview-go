@@ -1,20 +1,20 @@
-package main
+package solution
 
 import "fmt"
 
-func main() {
+func Run0206() {
 	var n1 = ListNode{1, nil}
 	var n2 = ListNode{2, &n1}
 	var n3 = ListNode{6, &n2}
 	var n4 = ListNode{6, &n3}
 	var n5 = ListNode{7, &n4}
-	var res = removeElements(&n5, 6)
+	var res = reverseList(&n5)
 	fmt.Println(res)
 	n1 = ListNode{1, nil}
 	n2 = ListNode{2, &n1}
 	n3 = ListNode{6, &n2}
 	n4 = ListNode{6, &n3}
-	res = removeElements(&n4, 6)
+	res = reverseList(&n4)
 	fmt.Println(res)
 }
 
@@ -30,27 +30,18 @@ func main() {
  *     Next *ListNode
  * }
  */
-func removeElements(head *ListNode, val int) *ListNode {
-	var ret = head
-	for ret != nil {
-		if ret.Val == val {
-			ret = ret.Next
-		} else {
-			break
-		}
+func reverseList(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
+		return head
 	}
-	if ret != nil {
-		var pre = ret
-		var cur = pre.Next
-		for cur != nil {
-			if cur.Val == val {
-				cur = cur.Next
-				pre.Next = cur
-			} else {
-				pre = cur
-				cur = cur.Next
-			}
-		}
+	var pre = head
+	var cur = head.Next
+	pre.Next = nil
+	for cur != nil {
+		var nxt = cur.Next
+		cur.Next = pre
+		pre = cur
+		cur = nxt
 	}
-	return ret
+	return pre
 }

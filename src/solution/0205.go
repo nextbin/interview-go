@@ -1,8 +1,8 @@
-package main
+package solution
 
 import "fmt"
 
-func main() {
+func Run0205() {
 	fmt.Println(isIsomorphic("egg", "add"))
 	fmt.Println(isIsomorphic("foo", "bar"))
 	fmt.Println(isIsomorphic("paper", "title"))

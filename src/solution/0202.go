@@ -1,8 +1,8 @@
-package main
+package solution
 
 import "fmt"
 
-func main() {
+func Run0202() {
 	fmt.Println(isHappy(19))
 	fmt.Println(isHappy(100))
 	fmt.Println(isHappy(1))

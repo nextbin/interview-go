@@ -1,8 +1,8 @@
-package main
+package solution
 
 import "fmt"
 
-func main() {
+func Run0225() {
 	var stack = Constructor()
 	fmt.Println(stack.Empty())
 	stack.Push(1)
