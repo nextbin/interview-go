@@ -1,6 +1,7 @@
 package main
 
-import "solution"
+//import "solution"
+import "solution/s0232"
 
 func main() {
 	//solution.Run0001()
@@ -14,5 +15,6 @@ func main() {
 	//solution.Run0217()
 	//solution.Run0225()
 	//solution.Run0226()
-	solution.Run0231()
+	//solution.Run0231()
+	s0232.Run0232()
 }
