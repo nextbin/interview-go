@@ -1,4 +1,4 @@
-package solution
+package s0225
 
 import "fmt"
 
