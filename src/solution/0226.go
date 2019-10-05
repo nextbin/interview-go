@@ -1,7 +1,9 @@
 package solution
 
-func Run0226() {
+import "fmt"
 
+func Run0226() {
+	fmt.Println(invertTree(nil))
 }
 
 /**
