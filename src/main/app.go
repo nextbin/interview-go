@@ -1,8 +1,6 @@
 package main
 
-import (
-	"solution"
-)
+import "solution"
 
 func main() {
 	//solution.Run0001()
@@ -20,5 +18,6 @@ func main() {
 	//s0232.Run0232()
 	//solution.Run0237()
 	//s0234.Run0234()
-	solution.Run0235()
+	//solution.Run0235()
+	solution.Run0242()
 }
