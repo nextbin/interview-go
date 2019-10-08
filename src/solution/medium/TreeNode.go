@@ -1,4 +1,4 @@
-package solution
+package medium
 
 /**
  * Definition for a binary tree node.

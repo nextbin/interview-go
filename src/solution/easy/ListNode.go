@@ -1,4 +1,4 @@
-package solution
+package easy
 
 /**
  * Definition for singly-linked list.
