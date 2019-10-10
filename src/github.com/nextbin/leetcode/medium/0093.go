@@ -1,22 +1,9 @@
 package medium
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
-
-func Run0093() {
-	fmt.Println(restoreIpAddresses("25525511135"))
-	fmt.Println(restoreIpAddresses("1111"))
-	fmt.Println(restoreIpAddresses("0111"))
-	fmt.Println(restoreIpAddresses("11101"))
-	fmt.Println(restoreIpAddresses("255255111135"))
-	fmt.Println(restoreIpAddresses("255255111335"))
-	fmt.Println(restoreIpAddresses("25525511335"))
-	fmt.Println(restoreIpAddresses("010010"))
-	fmt.Println(restoreIpAddresses(""))
-}
 
 func restoreIpAddresses(s string) []string {
 	if len(s) < 4 {
